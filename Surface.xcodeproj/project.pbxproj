@@ -32,6 +32,7 @@
 		45B32E871FF37592007BA7F4 /* load.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E801FF36C50007BA7F4 /* load.hpp */; };
 		45B32E881FF37592007BA7F4 /* write.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E831FF37197007BA7F4 /* write.hpp */; };
 		45B32E8B1FF376AE007BA7F4 /* blit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B32E891FF376AE007BA7F4 /* blit.cpp */; };
+		45B32E8D1FF37D0D007BA7F4 /* blit.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E8A1FF376AE007BA7F4 /* blit.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 			dstPath = /usr/local/include/Surface;
 			dstSubfolderSpec = 0;
 			files = (
+				45B32E8D1FF37D0D007BA7F4 /* blit.hpp in CopyFiles */,
 				45B32E861FF37592007BA7F4 /* surface.hpp in CopyFiles */,
 				45B32E871FF37592007BA7F4 /* load.hpp in CopyFiles */,
 				45B32E881FF37592007BA7F4 /* write.hpp in CopyFiles */,
@@ -132,6 +134,7 @@
 			buildPhases = (
 				45B32E551FF3554E007BA7F4 /* Sources */,
 				45B32E6B1FF3566A007BA7F4 /* CopyFiles */,
+				45B32E8C1FF37CBC007BA7F4 /* ShellScript */,
 				45B32E851FF37579007BA7F4 /* CopyFiles */,
 			);
 			buildRules = (
@@ -193,6 +196,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cd /usr/local/lib\n\ng++ -fpic -shared -Wl,-force_load,libSurface.a -o libSurface.dylib";
+		};
+		45B32E8C1FF37CBC007BA7F4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "rm -dfR /usr/local/include/Surface";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -349,6 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QY44MADGVC;
 				EXECUTABLE_PREFIX = lib;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-Wall",
