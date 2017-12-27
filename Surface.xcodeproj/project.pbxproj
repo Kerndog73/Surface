@@ -6,24 +6,60 @@
 	objectVersion = 48;
 	objects = {
 
-/* Begin PBXFileReference section */
-		45B32E591FF3554E007BA7F4 /* libSurface.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSurface.a; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXAggregateTarget section */
+		45B32E6D1FF3575E007BA7F4 /* Surface dylib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 45B32E6E1FF3575E007BA7F4 /* Build configuration list for PBXAggregateTarget "Surface dylib" */;
+			buildPhases = (
+				45B32E731FF35768007BA7F4 /* ShellScript */,
+			);
+			dependencies = (
+				45B32E721FF35764007BA7F4 /* PBXTargetDependency */,
+			);
+			name = "Surface dylib";
+			productName = "Surface dylib";
+		};
+/* End PBXAggregateTarget section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		45B32E561FF3554E007BA7F4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
+/* Begin PBXBuildFile section */
+		45B32E6C1FF3567B007BA7F4 /* libSurface.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E591FF3554E007BA7F4 /* libSurface.a */; };
+		45B32E771FF357EA007BA7F4 /* surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B32E751FF357EA007BA7F4 /* surface.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45B32E711FF35764007BA7F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45B32E511FF3554E007BA7F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45B32E581FF3554E007BA7F4;
+			remoteInfo = Surface;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45B32E6B1FF3566A007BA7F4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
+			dstPath = /usr/local/lib;
+			dstSubfolderSpec = 0;
 			files = (
+				45B32E6C1FF3567B007BA7F4 /* libSurface.a in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXFrameworksBuildPhase section */
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		45B32E591FF3554E007BA7F4 /* libSurface.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSurface.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B32E751FF357EA007BA7F4 /* surface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = surface.cpp; sourceTree = "<group>"; };
+		45B32E761FF357EA007BA7F4 /* surface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = surface.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		45B32E501FF3554E007BA7F4 = {
 			isa = PBXGroup;
 			children = (
+				45B32E741FF357DD007BA7F4 /* Surface */,
 				45B32E5A1FF3554E007BA7F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -36,17 +72,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		45B32E571FF3554E007BA7F4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+		45B32E741FF357DD007BA7F4 /* Surface */ = {
+			isa = PBXGroup;
+			children = (
+				45B32E751FF357EA007BA7F4 /* surface.cpp */,
+				45B32E761FF357EA007BA7F4 /* surface.hpp */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			path = Surface;
+			sourceTree = "<group>";
 		};
-/* End PBXHeadersBuildPhase section */
+/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		45B32E581FF3554E007BA7F4 /* Surface */ = {
@@ -54,8 +89,7 @@
 			buildConfigurationList = 45B32E5D1FF3554E007BA7F4 /* Build configuration list for PBXNativeTarget "Surface" */;
 			buildPhases = (
 				45B32E551FF3554E007BA7F4 /* Sources */,
-				45B32E561FF3554E007BA7F4 /* Frameworks */,
-				45B32E571FF3554E007BA7F4 /* Headers */,
+				45B32E6B1FF3566A007BA7F4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -79,6 +113,10 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
+					45B32E6D1FF3575E007BA7F4 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 45B32E541FF3554E007BA7F4 /* Build configuration list for PBXProject "Surface" */;
@@ -94,19 +132,45 @@
 			projectRoot = "";
 			targets = (
 				45B32E581FF3554E007BA7F4 /* Surface */,
+				45B32E6D1FF3575E007BA7F4 /* Surface dylib */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45B32E731FF35768007BA7F4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd /usr/local/lib\n\ng++ -fpic -shared -Wl,-force_load,libSurface.a -o libSurface.dylib";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45B32E551FF3554E007BA7F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B32E771FF357EA007BA7F4 /* surface.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45B32E721FF35764007BA7F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45B32E581FF3554E007BA7F4 /* Surface */;
+			targetProxy = 45B32E711FF35764007BA7F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		45B32E5B1FF3554E007BA7F4 /* Debug */ = {
@@ -218,6 +282,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QY44MADGVC;
 				EXECUTABLE_PREFIX = lib;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wall",
+					"-Wextra",
+					"-Weffc++",
+					"-Wpedantic",
+					"-Wno-documentation",
+					"-std=c++1z",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -228,6 +301,33 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QY44MADGVC;
 				EXECUTABLE_PREFIX = lib;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-Wall",
+					"-Wextra",
+					"-Weffc++",
+					"-Wpedantic",
+					"-Wno-documentation",
+					"-std=c++1z",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		45B32E6F1FF3575E007BA7F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QY44MADGVC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		45B32E701FF3575E007BA7F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QY44MADGVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -249,6 +349,15 @@
 			buildConfigurations = (
 				45B32E5E1FF3554E007BA7F4 /* Debug */,
 				45B32E5F1FF3554E007BA7F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45B32E6E1FF3575E007BA7F4 /* Build configuration list for PBXAggregateTarget "Surface dylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45B32E6F1FF3575E007BA7F4 /* Debug */,
+				45B32E701FF3575E007BA7F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
