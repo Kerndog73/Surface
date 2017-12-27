@@ -6,8 +6,8 @@
 //  Copyright © 2017 Indi Kernick. All rights reserved.
 //
 
-#ifndef load_surface_hpp
-#define load_surface_hpp
+#ifndef surface_load_hpp
+#define surface_load_hpp
 
 #include <stdexcept>
 #include <string_view>

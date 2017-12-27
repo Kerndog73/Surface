@@ -1,12 +1,12 @@
 //
-//  load surface.cpp
+//  load.cpp
 //  Surface
 //
 //  Created by Indi Kernick on 27/12/17.
 //  Copyright © 2017 Indi Kernick. All rights reserved.
 //
 
-#include "load surface.hpp"
+#include "load.hpp"
 
 #include <string>
 #include "stb_image.h"

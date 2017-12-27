@@ -6,8 +6,8 @@
 //  Copyright © 2017 Indi Kernick. All rights reserved.
 //
 
-#ifndef realloc_hpp
-#define realloc_hpp
+#ifndef surface_realloc_hpp
+#define surface_realloc_hpp
 
 #include <string.h>
 

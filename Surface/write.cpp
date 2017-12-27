@@ -1,12 +1,12 @@
 //
-//  write surface.cpp
+//  write.cpp
 //  Surface
 //
 //  Created by Indi Kernick on 27/12/17.
 //  Copyright © 2017 Indi Kernick. All rights reserved.
 //
 
-#include "write surface.hpp"
+#include "write.hpp"
 
 #include <string>
 #include "stb_image_write.h"

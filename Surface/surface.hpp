@@ -6,8 +6,8 @@
 //  Copyright © 2017 Indi Kernick. All rights reserved.
 //
 
-#ifndef surface_hpp
-#define surface_hpp
+#ifndef surface_surface_hpp
+#define surface_surface_hpp
 
 #include <memory>
 #include <cstdint>

@@ -1,13 +1,13 @@
 //
-//  write surface.hpp
+//  write.hpp
 //  Surface
 //
 //  Created by Indi Kernick on 27/12/17.
 //  Copyright © 2017 Indi Kernick. All rights reserved.
 //
 
-#ifndef write_surface_hpp
-#define write_surface_hpp
+#ifndef surface_write_hpp
+#define surface_write_hpp
 
 #include <stdexcept>
 #include "surface.hpp"
