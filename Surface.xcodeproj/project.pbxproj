@@ -27,6 +27,7 @@
 		45B32E7C1FF35E58007BA7F4 /* stb_image_write.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B32E791FF35E58007BA7F4 /* stb_image_write.cpp */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
 		45B32E7D1FF35E58007BA7F4 /* stb_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B32E7A1FF35E58007BA7F4 /* stb_image.cpp */; settings = {COMPILER_FLAGS = "-Wno-comma"; }; };
 		45B32E811FF36C50007BA7F4 /* load surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B32E7F1FF36C50007BA7F4 /* load surface.cpp */; };
+		45B32E841FF37197007BA7F4 /* write surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B32E821FF37197007BA7F4 /* write surface.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		45B32E7E1FF362F2007BA7F4 /* realloc.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = realloc.hpp; sourceTree = "<group>"; };
 		45B32E7F1FF36C50007BA7F4 /* load surface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "load surface.cpp"; sourceTree = "<group>"; };
 		45B32E801FF36C50007BA7F4 /* load surface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "load surface.hpp"; sourceTree = "<group>"; };
+		45B32E821FF37197007BA7F4 /* write surface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "write surface.cpp"; sourceTree = "<group>"; };
+		45B32E831FF37197007BA7F4 /* write surface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "write surface.hpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -94,6 +97,8 @@
 				45B32E761FF357EA007BA7F4 /* surface.hpp */,
 				45B32E7F1FF36C50007BA7F4 /* load surface.cpp */,
 				45B32E801FF36C50007BA7F4 /* load surface.hpp */,
+				45B32E821FF37197007BA7F4 /* write surface.cpp */,
+				45B32E831FF37197007BA7F4 /* write surface.hpp */,
 			);
 			path = Surface;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 			files = (
 				45B32E771FF357EA007BA7F4 /* surface.cpp in Sources */,
 				45B32E7C1FF35E58007BA7F4 /* stb_image_write.cpp in Sources */,
+				45B32E841FF37197007BA7F4 /* write surface.cpp in Sources */,
 				45B32E811FF36C50007BA7F4 /* load surface.cpp in Sources */,
 				45B32E7D1FF35E58007BA7F4 /* stb_image.cpp in Sources */,
 			);
