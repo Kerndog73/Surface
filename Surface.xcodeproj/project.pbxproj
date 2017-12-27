@@ -31,6 +31,7 @@
 		45B32E861FF37592007BA7F4 /* surface.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E761FF357EA007BA7F4 /* surface.hpp */; };
 		45B32E871FF37592007BA7F4 /* load.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E801FF36C50007BA7F4 /* load.hpp */; };
 		45B32E881FF37592007BA7F4 /* write.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E831FF37197007BA7F4 /* write.hpp */; };
+		45B32E8B1FF376AE007BA7F4 /* blit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45B32E891FF376AE007BA7F4 /* blit.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		45B32E801FF36C50007BA7F4 /* load.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = load.hpp; sourceTree = "<group>"; };
 		45B32E821FF37197007BA7F4 /* write.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = write.cpp; sourceTree = "<group>"; };
 		45B32E831FF37197007BA7F4 /* write.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = write.hpp; sourceTree = "<group>"; };
+		45B32E891FF376AE007BA7F4 /* blit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = blit.cpp; sourceTree = "<group>"; };
+		45B32E8A1FF376AE007BA7F4 /* blit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = blit.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -114,6 +117,8 @@
 				45B32E801FF36C50007BA7F4 /* load.hpp */,
 				45B32E821FF37197007BA7F4 /* write.cpp */,
 				45B32E831FF37197007BA7F4 /* write.hpp */,
+				45B32E891FF376AE007BA7F4 /* blit.cpp */,
+				45B32E8A1FF376AE007BA7F4 /* blit.hpp */,
 			);
 			path = Surface;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 			files = (
 				45B32E771FF357EA007BA7F4 /* surface.cpp in Sources */,
 				45B32E7C1FF35E58007BA7F4 /* stb_image_write.cpp in Sources */,
+				45B32E8B1FF376AE007BA7F4 /* blit.cpp in Sources */,
 				45B32E841FF37197007BA7F4 /* write.cpp in Sources */,
 				45B32E811FF36C50007BA7F4 /* load.cpp in Sources */,
 				45B32E7D1FF35E58007BA7F4 /* stb_image.cpp in Sources */,
