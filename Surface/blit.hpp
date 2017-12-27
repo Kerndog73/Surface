@@ -12,6 +12,8 @@
 #include <stdexcept>
 #include "surface.hpp"
 
+#pragma GCC visibility push(default)
+
 class FormatError final : public std::runtime_error {
 public:
   FormatError();
@@ -19,5 +21,7 @@ public:
 
 void blit(Surface &, const Surface &);
 void blit(Surface &, const Surface &, Surface::Size, Surface::Size);
+
+#pragma GCC visibility pop
 
 #endif
