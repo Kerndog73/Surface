@@ -9,8 +9,12 @@
 #include "surface.hpp"
 
 namespace {
-  Byte *alloc(const Size width, const Size height, const BytesPerPixel bpp) {
-    return static_cast<Byte *>(operator new(width * height * bpp));
+  Surface::Byte *alloc(
+    const Surface::Size width,
+    const Surface::Size height,
+    const Surface::BytesPerPixel bpp
+  ) {
+    return static_cast<Surface::Byte *>(operator new(width * height * bpp));
   }
 }
 
@@ -45,27 +49,27 @@ Surface::Surface(
     mHeight(height),
     mBytesPerPixel(bpp) {}
 
-Byte *Surface::data() {
+Surface::Byte *Surface::data() {
   return mData.get();
 }
 
-Byte *Surface::data(const Size x, const Size y) {
+Surface::Byte *Surface::data(const Size x, const Size y) {
   return mData.get() + (y * mPitch + x * mBytesPerPixel);
 }
 
-Byte *Surface::dataEnd() {
+Surface::Byte *Surface::dataEnd() {
   return mData.get() + (mHeight * mPitch);
 }
 
-const Byte *Surface::data() const {
+const Surface::Byte *Surface::data() const {
   return mData.get();
 }
 
-const Byte *Surface::data(const Size x, const Size y) const {
+const Surface::Byte *Surface::data(const Size x, const Size y) const {
   return mData.get() + (y * mPitch + x * mBytesPerPixel);
 }
 
-const Byte *Surface::dataEnd() const {
+const Surface::Byte *Surface::dataEnd() const {
   return mData.get() + (static_cast<Pitch>(mHeight) * mPitch);
 }
 
@@ -73,26 +77,26 @@ size_t Surface::size() const {
   return std::abs(static_cast<Pitch>(mHeight) * mPitch);
 }
 
-Pitch Surface::pitch() const {
+Surface::Pitch Surface::pitch() const {
   return mPitch;
 }
 
-Size Surface::padding() const {
+Surface::Size Surface::padding() const {
   return mPitch - widthBytes();
 }
 
-Size Surface::width() const {
+Surface::Size Surface::width() const {
   return mWidth;
 }
 
-Size Surface::widthBytes() const {
+Surface::Size Surface::widthBytes() const {
   return mWidth * mBytesPerPixel;
 }
 
-Size Surface::height() const {
+Surface::Size Surface::height() const {
   return mHeight;
 }
 
-BytesPerPixel Surface::bytesPerPixel() const {
+Surface::BytesPerPixel Surface::bytesPerPixel() const {
   return mBytesPerPixel;
 }

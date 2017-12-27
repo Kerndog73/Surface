@@ -12,13 +12,12 @@
 #include <memory>
 #include <cstdint>
 
-using Byte = uint8_t;
-using Size = uint32_t;
-using BytesPerPixel = uint32_t;
-using Pitch = int32_t;
-
 class Surface {
 public:
+  using Byte = uint8_t;
+  using Size = uint32_t;
+  using BytesPerPixel = uint32_t;
+  using Pitch = int32_t;
   using Data = std::unique_ptr<Byte>;
   
   Surface(Surface &&) = default;
