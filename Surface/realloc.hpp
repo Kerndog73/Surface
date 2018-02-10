@@ -9,11 +9,11 @@
 #ifndef surface_realloc_hpp
 #define surface_realloc_hpp
 
-#include <string.h>
+#include <cstring>
 
 inline void *reallocMem(void *const ptr, const size_t oldSize, const size_t newSize) {
   void *const newPtr = operator new(newSize);
-  memcpy(newPtr, ptr, oldSize);
+  std::memcpy(newPtr, ptr, oldSize);
   operator delete(ptr);
   return newPtr;
 }

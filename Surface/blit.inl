@@ -1,21 +1,19 @@
 //
-//  blit.cpp
+//  blit.inl
 //  Surface
 //
 //  Created by Indi Kernick on 27/12/17.
 //  Copyright © 2017 Indi Kernick. All rights reserved.
 //
 
-#include "blit.hpp"
-
-FormatError::FormatError()
+inline FormatError::FormatError()
   : std::runtime_error("Cannot blit surfaces with different bytesPerPixel") {}
 
-void blit(Surface &dst, const Surface &src) {
+inline void blit(Surface &dst, const Surface &src) {
   blit(dst, src, 0, 0);
 }
 
-void blit(Surface &dst, const Surface &src, const Surface::Size srcX, const Surface::Size srcY) {
+inline void blit(Surface &dst, const Surface &src, const Surface::Size srcX, const Surface::Size srcY) {
   if (dst.bytesPerPixel() != src.bytesPerPixel()) {
     throw FormatError();
   }

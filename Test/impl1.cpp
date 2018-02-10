@@ -1,0 +1,5 @@
+#include "../Surface/surface.hpp"
+#include "../Surface/load.hpp"
+#include "../Surface/write.hpp"
+#include "../Surface/realloc.hpp"
+#include "../Surface/blit.hpp"

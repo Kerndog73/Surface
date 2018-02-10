@@ -13,8 +13,6 @@
 #include "surface.hpp"
 #include <string_view>
 
-#pragma GCC visibility push(default)
-
 class SurfaceWriteError final : public std::runtime_error {
 public:
   explicit SurfaceWriteError(std::string_view);
@@ -22,6 +20,6 @@ public:
 
 void writeSurface(std::string_view, const Surface &);
 
-#pragma GCC visibility pop
+#include "write.inl"
 
 #endif

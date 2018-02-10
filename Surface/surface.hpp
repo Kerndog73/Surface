@@ -12,8 +12,6 @@
 #include <memory>
 #include <cstdint>
 
-#pragma GCC visibility push(default)
-
 class Surface {
 public:
   using Byte = uint8_t;
@@ -56,6 +54,6 @@ private:
   BytesPerPixel mBytesPerPixel;  //bytes per pixel
 };
 
-#pragma GCC visibility pop
+#include "surface.inl"
 
 #endif
