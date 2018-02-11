@@ -12,8 +12,6 @@
 		45B32E881FF37592007BA7F4 /* write.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E831FF37197007BA7F4 /* write.hpp */; };
 		45B32E8D1FF37D0D007BA7F4 /* blit.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E8A1FF376AE007BA7F4 /* blit.hpp */; };
 		45C918F2202E93FC00AC4608 /* realloc.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E7E1FF362F2007BA7F4 /* realloc.hpp */; };
-		45C918F3202E93FD00AC4608 /* stb_image_write.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E781FF35E57007BA7F4 /* stb_image_write.h */; };
-		45C918F4202E93FD00AC4608 /* stb_image.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E7B1FF35E58007BA7F4 /* stb_image.h */; };
 		45C918F5202E93FD00AC4608 /* surface.inl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E751FF357EA007BA7F4 /* surface.inl */; };
 		45C918F6202E93FD00AC4608 /* load.inl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E7F1FF36C50007BA7F4 /* load.inl */; };
 		45C918F7202E93FD00AC4608 /* write.inl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E821FF37197007BA7F4 /* write.inl */; };
@@ -40,8 +38,6 @@
 			dstSubfolderSpec = 0;
 			files = (
 				45C918F2202E93FC00AC4608 /* realloc.hpp in CopyFiles */,
-				45C918F3202E93FD00AC4608 /* stb_image_write.h in CopyFiles */,
-				45C918F4202E93FD00AC4608 /* stb_image.h in CopyFiles */,
 				45C918F5202E93FD00AC4608 /* surface.inl in CopyFiles */,
 				45C918F6202E93FD00AC4608 /* load.inl in CopyFiles */,
 				45C918F7202E93FD00AC4608 /* write.inl in CopyFiles */,
@@ -56,11 +52,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		458905972030FE0B0050F1C4 /* stb_image_write.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
+		458905982031011F0050F1C4 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		45B32E591FF3554E007BA7F4 /* libSurface.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSurface.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B32E751FF357EA007BA7F4 /* surface.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = surface.inl; sourceTree = "<group>"; };
 		45B32E761FF357EA007BA7F4 /* surface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = surface.hpp; sourceTree = "<group>"; };
-		45B32E781FF35E57007BA7F4 /* stb_image_write.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
-		45B32E7B1FF35E58007BA7F4 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		45B32E7E1FF362F2007BA7F4 /* realloc.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = realloc.hpp; sourceTree = "<group>"; };
 		45B32E7F1FF36C50007BA7F4 /* load.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = load.inl; sourceTree = "<group>"; };
 		45B32E801FF36C50007BA7F4 /* load.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = load.hpp; sourceTree = "<group>"; };
@@ -96,8 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				45B32E7E1FF362F2007BA7F4 /* realloc.hpp */,
-				45B32E781FF35E57007BA7F4 /* stb_image_write.h */,
-				45B32E7B1FF35E58007BA7F4 /* stb_image.h */,
+				458905982031011F0050F1C4 /* stb_image.h */,
+				458905972030FE0B0050F1C4 /* stb_image_write.h */,
 				45B32E751FF357EA007BA7F4 /* surface.inl */,
 				45B32E761FF357EA007BA7F4 /* surface.hpp */,
 				45B32E7F1FF36C50007BA7F4 /* load.inl */,

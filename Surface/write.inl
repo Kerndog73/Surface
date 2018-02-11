@@ -9,7 +9,7 @@
 #include <string>
 #include "realloc.hpp"
 
-#define STBIWDEF inline
+#define STB_IMAGE_WRITE_STATIC
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #define STBIW_MALLOC(SIZE) operator new(SIZE)
 #define STBIW_REALLOC_SIZED(PTR, OLD_SIZE, NEW_SIZE) reallocMem(PTR, OLD_SIZE, NEW_SIZE)
