@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45890599203144070050F1C4 /* stb_image.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 458905982031011F0050F1C4 /* stb_image.h */; };
+		4589059A203144070050F1C4 /* stb_image_write.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 458905972030FE0B0050F1C4 /* stb_image_write.h */; };
 		45B32E861FF37592007BA7F4 /* surface.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E761FF357EA007BA7F4 /* surface.hpp */; };
 		45B32E871FF37592007BA7F4 /* load.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E801FF36C50007BA7F4 /* load.hpp */; };
 		45B32E881FF37592007BA7F4 /* write.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B32E831FF37197007BA7F4 /* write.hpp */; };
@@ -37,6 +39,8 @@
 			dstPath = /usr/local/include/Surface;
 			dstSubfolderSpec = 0;
 			files = (
+				45890599203144070050F1C4 /* stb_image.h in CopyFiles */,
+				4589059A203144070050F1C4 /* stb_image_write.h in CopyFiles */,
 				45C918F2202E93FC00AC4608 /* realloc.hpp in CopyFiles */,
 				45C918F5202E93FD00AC4608 /* surface.inl in CopyFiles */,
 				45C918F6202E93FD00AC4608 /* load.inl in CopyFiles */,
