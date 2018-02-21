@@ -20,4 +20,6 @@ public:
 void blit(Surface &, const Surface &);
 void blit(Surface &, const Surface &, Surface::Size, Surface::Size);
 
+#include "blit.inl"
+
 #endif
